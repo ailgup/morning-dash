@@ -1,0 +1,1 @@
+class Dashing.Mbta extends Dashing.Widget

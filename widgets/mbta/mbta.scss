@@ -1,0 +1,49 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #808080;
+$text-color: #FFFFFF;
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+.widget-mbta {
+
+ 
+  background-image: url("http://chrispuglia.com/images/mbtabk.png");
+  background-repeat: no-repeat;
+  background-size:auto 100%;
+  background-position: center; 
+  background-color: $background-color;
+.p {
+	display: inline;
+	}
+
+  .line {
+    font-size: 270%;
+    color: $text-color;
+  }
+
+  .name {
+    font-size: 140%;
+    color: $text-color;
+  }
+
+  .direction {
+    font-size: 100%;
+    color: $text-color;
+  }
+
+  .time {
+    font-size: 200%;
+    color: $text-color;
+  }
+    .direction2 {
+    font-size: 100%;
+    color: $text-color;
+  }
+
+  .time2 {
+    font-size: 200%;
+    color: $text-color;
+  }
+}

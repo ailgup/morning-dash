@@ -1,0 +1,57 @@
+---
+convergence: ! 'data: {"points":[{"x":474,"y":42},{"x":475,"y":14},{"x":476,"y":26},{"x":477,"y":24},{"x":478,"y":10},{"x":479,"y":45},{"x":480,"y":36},{"x":481,"y":1},{"x":482,"y":40},{"x":483,"y":21}],"id":"convergence","updatedAt":1430096895}
+
+
+'
+valuation: ! 'data: {"current":42,"last":39,"id":"valuation","updatedAt":1430017368}
+
+
+'
+karma: ! 'data: {"current":136290,"last":27785,"id":"karma","updatedAt":1430017368}
+
+
+'
+synergy: ! 'data: {"value":"7","id":"synergy","updatedAt":1430013027}
+
+
+'
+buzzwords: ! 'data: {"items":[{"label":"Streamlininess","value":18},{"label":"Pivoting","value":19},{"label":"Turn-key","value":24},{"label":"Synergy","value":19},{"label":"Web
+  2.0","value":19},{"label":"Leverage","value":28},{"label":"Exit strategy","value":24},{"label":"Paradigm
+  shift","value":29},{"label":"Enterprise","value":22}],"id":"buzzwords","updatedAt":1430096895}
+
+
+'
+mta: ! 'data: {"line":"","name":"Loading","direction":"","time":"","id":"mta","updatedAt":1429582368}
+
+
+'
+mbta: ! 'data: {"obn1":"Forest Hills","obn2":"Forest Hills","obn3":"","ob1":"1m ","ob2":"14m
+  ","ob3":"","ibn1":"Oak Grove","ibn2":"","ibn3":"","ib1":"6m ","ib2":"","ib3":"","cr1":"56m
+  ","cr2":"","crn1":"South Station","crn2":"","id":"mbta","updatedAt":1433106163}
+
+
+'
+progress_bars: ! 'data: {"title":"Hubway","progress_items":[{"name":"Ruggles","progress":85.71428571428571,"value":"12/14"},{"name":"North
+  Lot","progress":40.0,"value":"6/15"},{"name":"Mass Ave.","progress":63.63636363636363,"value":"7/11"},{"name":"Sleeper
+  St.","progress":10.526315789473683,"value":"2/19"},{"name":"South Station","progress":15.555555555555555,"value":"7/45"}],"id":"progress_bars","updatedAt":1434224722}
+
+
+'
+verbinski: ! 'data: {"current":{"temperature":29,"summary":"Partly Cloudy","humidity":"49&#37;","wind_speed":22,"wind_bearing":201,"icon":"partly-cloudy-day"},"today":{"summary":"Rain
+  starting tomorrow morning.","high":30,"low":15,"sunrise":"9:12 am","sunset":"12:13
+  am","icon":"partly-cloudy-day"},"upcoming_week":[{"max_temp":23,"min_temp":11,"time":"Sun","icon":"rain"},{"max_temp":13,"min_temp":10,"time":"Mon","icon":"rain"},{"max_temp":12,"min_temp":9,"time":"Tue","icon":"rain"},{"max_temp":18,"min_temp":9,"time":"Wed","icon":"partly-cloudy-day"},{"max_temp":24,"min_temp":9,"time":"Thu","icon":"partly-cloudy-day"},{"max_temp":28,"min_temp":15,"time":"Fri","icon":"partly-cloudy-day"},{"max_temp":29,"min_temp":15,"time":"Sat","icon":"rain"}],"id":"verbinski","updatedAt":1433019049}
+
+
+'
+forecast: ! 'data: {"current_temp":"79&deg;","current_icon":"partly-cloudy-day","current_desc":"Partly
+  Cloudy","next_icon":"partly-cloudy-day","next_desc":"Partly cloudy for the hour.","later_icon":"partly-cloudy-day","later_desc":"Mostly
+  cloudy starting tonight.","id":"forecast","updatedAt":1434224659}
+
+
+'
+hubway: ! 'data: {"title":"Hubway","progress_items":[{"name":"Ruggles","progress":60.0,"value":"9/15"},{"name":"North
+  Lot","progress":86.66666666666667,"value":"13/15"},{"name":"Mass Ave.","progress":36.36363636363637,"value":"4/11"},{"name":"Sleeper
+  St.","progress":10.526315789473683,"value":"2/19"},{"name":"South Station","progress":63.04347826086957,"value":"29/46"}],"id":"hubway","updatedAt":1433103066}
+
+
+'
