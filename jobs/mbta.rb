@@ -5,14 +5,10 @@ require 'xpath'
 require 'rufus-scheduler'
 
 # # Change the refresh times if needed
-# # Updates list of trains arriving in the next 5 minutes (TIME) every 1 minute (UPDATE).
-# # Displays a particular train/stop combination data for 3 seconds (DISPLAY) before cycling to another
-UPDATE = '1m'
-TIME = 10 # Note that this is an integer, not a string (represents minutes)
-DISPLAY = '10s'
+DISPLAY = '30s'
 
 # Displays train/stop info, and cycles through the different data 
-SCHEDULER.every DISPLAY, :first_in => '5s' do |job|
+SCHEDULER.every DISPLAY, :first_in => 0 do |job|
 	
 	
 	begin
