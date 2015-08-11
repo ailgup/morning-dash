@@ -11,7 +11,7 @@ configure do
   end
 end
 
-set :assets_prefix, '/<sub path>/assets'
+set :assets_prefix, '/assets'
 
 map Sinatra::Application.assets_prefix do
   run Sinatra::Application.sprockets

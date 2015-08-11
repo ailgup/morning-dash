@@ -41,7 +41,7 @@ class News
       feed.items.each do |item|
         title = clean_html(item.title.to_s)
         begin
-		  #summary = summary.gsub("(Reuters) ","")
+		  summary = summary.gsub("(Reuters) ","")
           summary =  truncate(clean_html(item.description))
         rescue
           doc = Nokogiri::HTML(item.summary.content)
