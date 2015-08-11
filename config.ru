@@ -11,11 +11,7 @@ configure do
   end
 end
 
-environment.context_class.class_eval do
-  def asset_path(path, options = {})
-    "/assets/#{path}"
-  end
-end
+set :assets_prefix, '/<sub path>/assets'
 
 map Sinatra::Application.assets_prefix do
   run Sinatra::Application.sprockets
