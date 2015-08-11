@@ -18,10 +18,7 @@ $base-color-lightest: lighten($base-color, 35%);
 
 $text-color:       $base-color-lightest;
 
-environment.context_class.class_eval do
-	def asset_path{path, options = {}}
-	end
-end
+
 
 // ----------------------------------------------------------------------------
 // Widget-project-completion styles
@@ -43,7 +40,7 @@ end
 
   .title {
     color: $text-color;
-	background:image-url('hubway.png') center top no-repeat;
+	background-image: url('/assets/hubway.png') center top no-repeat;
 	background-size: auto 100%;
     margin-bottom: 5px;
 	height: 50px;
