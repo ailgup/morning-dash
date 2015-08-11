@@ -19,7 +19,7 @@ $base-color-lightest: lighten($base-color, 35%);
 $text-color:       $base-color-lightest;
 
 environment.context_class.class_eval do
-	def asset_path(path, options = {})
+	def asset_path{path, options = {}}
 	end
 end
 
