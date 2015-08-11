@@ -5,7 +5,7 @@ require 'xpath'
 require 'rufus-scheduler'
 
 
-SCHEDULER.every '30s', :first_in => 0 do |job|
+SCHEDULER.every '60s', :first_in => 0 do |job|
 
 	@doc = Nokogiri::HTML(open("http://www.thehubway.com/data/stations/bikeStations.xml"))
 	progress_items = [{ name: "Ruggles", progress: percAvail(@doc,"Ruggles"), value: stringAvail(@doc,"Ruggles") }, { name: "North Lot", progress: percAvail(@doc,"North Parking Lot") , value:stringAvail(@doc,"North Parking Lot") }, { name: "Mass Ave.", progress: percAvail(@doc,"Columbus Ave. at Mass. Ave.") , value:stringAvail(@doc,"Columbus Ave. at Mass. Ave.") }, { name: "Sleeper St.", progress: percAvail(@doc,"Congress / Sleeper"), value:stringAvail(@doc,"Congress / Sleeper")  }, { name: "South Station", progress: percAvail(@doc,"South Station - 700 Atlantic Ave.") , value:stringAvail(@doc,"South Station - 700 Atlantic Ave.") }]

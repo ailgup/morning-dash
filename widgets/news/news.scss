@@ -10,10 +10,13 @@ $moreinfo-color:    rgba(255, 255, 255, 0.8);;
 // ----------------------------------------------------------------------------
 // Widget-news styles
 // ----------------------------------------------------------------------------
-.widget-news {
-
-  background-color: $background-color;
-  vertical-align: baseline !important;
+   .widget-news {
+	 background-image: url("http://i.imgur.com/gKzVVNF.png");
+	 background-repeat: no-repeat;
+	 background-size:auto 100%;
+	 background-position: center;
+	 background-color: $background-color;
+	 vertical-align: baseline !important;
 
   .headline-container {
     display: none;
