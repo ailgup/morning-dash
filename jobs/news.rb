@@ -5,7 +5,7 @@ require 'htmlentities'
 
 news_feeds = {
   "bbc-tech" => "http://feeds.bbci.co.uk/news/technology/rss.xml",
-  "sports" => "http://feeds.reuters.com/reuters/sportsNews"
+  "sports" => "http://feeds.reuters.com/reuters/sportsNews",
   "mashable" => "http://feeds.feedburner.com/Mashable",
   "techcrunch" => "http://feeds.feedburner.com/TechCrunch/",
   "opm" => "http://www.opm.gov/rss/operatingstatus.atom",
