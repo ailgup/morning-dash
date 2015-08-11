@@ -23,7 +23,7 @@ class News
     @widget_id
   end
 
-  def truncate(string, length = 200)
+  def truncate(string, length = 350)
     raise 'Truncate: Length should be greater than 3' unless length > 3
 
     truncated_string = string.to_s
@@ -41,6 +41,7 @@ class News
       feed.items.each do |item|
         title = clean_html(item.title.to_s)
         begin
+		  summary = summary.gsub("(Reuters) ","")
           summary =  truncate(clean_html(item.description))
         rescue
           doc = Nokogiri::HTML(item.summary.content)
@@ -54,7 +55,7 @@ class News
 
   def clean_html( html )
     html = html.gsub(/<\/?[^>]*>/, "")
-	html = html.gsub("VIDEO:","")
+	
     html = Decoder.decode( html )
     return html
   end
