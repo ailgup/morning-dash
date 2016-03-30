@@ -21,7 +21,7 @@ SCHEDULER.every '5m', :first_in => 0 do |job|
   response = http.request(Net::HTTP::Get.new("/forecast/#{forecast_api_key}/#{forecast_location_lat},#{forecast_location_long}?units=#{forecast_units}"))
   forecast = JSON.parse(response.body)  
   forecast_current_temp = forecast["currently"]["temperature"].round
-  forecast_high_temp = forecast["currently"]["temperatureMax"].round
+  forecast_high_temp = forecast["daily"]["data"]["temperatureMax"].round
   forecast_current_icon = forecast["currently"]["icon"]
   forecast_current_desc = forecast["currently"]["summary"]
   if forecast["minutely"]  # sometimes this is missing from the response.  I don't know why
