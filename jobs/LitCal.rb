@@ -1,5 +1,5 @@
 
-require 'Nokogiri'
+require 'nokogiri'
 require 'JSON'
 require 'csv'
 
