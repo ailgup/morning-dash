@@ -5,11 +5,12 @@ require 'json'
 
 key             = URI::encode('emfzpfv8dcee2dkkubqantzg')
 locations       = []
+locations << { name: "Townsend", location: URI::encode('42.33716720443085,-71.08634632133482:42.62207049,-71.67189181') }
 locations << { name: "CyPhy via Storrow", location: URI::encode('42.33716720443085,-71.08634632133482:circle(42.348449,-71.072096,100):42.57545873043469,-70.97465425729752') }
 locations << { name: "CyPhy via 93", location: URI::encode('42.33716720443085,-71.08634632133482:circle(42.335263,-71.06687665,100):42.57545873043469,-70.97465425729752') }
 locations << { name: "NEU via Rt.1", location: URI::encode('42.57545873043469,-70.97465425729752:circle(42.384754,-71.047544,100):42.33716720443085,-71.08634632133482') }
 locations << { name: "NEU via I-95", location: URI::encode('42.57545873043469,-70.97465425729752:circle(42.390849,-71.083114,100):42.33716720443085,-71.08634632133482') }
-locations << { name: "Townsend", location: URI::encode('42.33716720443085,-71.08634632133482:42.62207049,-71.67189181') }
+
 
 
 SCHEDULER.every '10m', :first_in => '15s' do |job|
