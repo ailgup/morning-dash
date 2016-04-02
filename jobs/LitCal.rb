@@ -44,5 +44,5 @@ SCHEDULER.every '60s', :first_in => 0 do |job|
 
 	color=color
 	week = page['season_week'].to_s+title+" week of "+season
-	send_event('litcal', { color: color, weekday:weekday, week:week, rank:rank, saint:saint_name } )
+	send_event('litcal', { color: 'white', weekday:weekday, week:week, rank:rank, saint:saint_name } )
 end
