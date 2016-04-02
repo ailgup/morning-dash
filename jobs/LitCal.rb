@@ -42,7 +42,7 @@ SCHEDULER.every '60s', :first_in => 0 do |job|
 		#send_event( 'LitCal', {title: "Optional Memorial", saint_name: progress_items} )
 	end
 
-	color="style: { color:"+color
+	color=color
 	week = page['season_week'].to_s+title+" week of "+season
 	send_event('litcal', { color: color, weekday:weekday, week:week, rank:rank, saint:saint_name } )
 end

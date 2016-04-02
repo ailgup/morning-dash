@@ -2,7 +2,7 @@ class Dashing.litcal extends Dashing.Widget
 
   ready: ->
     # This is fired when the widget is done being rendered
-
+	@setColor(@get('color'))
   onData: (data) ->
     @setColor(@get('color'))
 	# Handle incoming data
