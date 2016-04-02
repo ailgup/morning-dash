@@ -1,6 +1,5 @@
 
 require 'nokogiri'
-require 'JSON'
 require 'csv'
 
 page = HTTParty.get('http://calapi.inadiutorium.cz/api/v0/en/calendars/general-la/today')
