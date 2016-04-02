@@ -39,7 +39,7 @@ SCHEDULER.every '60s', :first_in => 0 do |job|
 		if page['celebrations'][1]['title'].include? ','
 			saint_title= page['celebrations'][1]['title'].split(",")[1]
 		end
-		send_event( 'lit_cal', {title: "Optional Memorial", saint_name: progress_items} )
+		#send_event( 'LitCal', {title: "Optional Memorial", saint_name: progress_items} )
 	end
 
 	color="style: { color:"+color
