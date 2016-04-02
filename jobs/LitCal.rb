@@ -1,4 +1,4 @@
-require 'HTTParty'
+
 require 'Nokogiri'
 require 'JSON'
 require 'csv'
