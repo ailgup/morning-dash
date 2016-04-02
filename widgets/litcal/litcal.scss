@@ -1,9 +1,9 @@
-.p45-colour {
-  background-color: #d71717; }
+$background-color: #d71717;
  .widget-lit-cal h1{
   font-size: 24px;}
-.widget-lit-cal {
-  background-color: #ec663c; }
+  .widget-lit-cal{
+  background: $background-color;
+  }
   .widget-lit-cal .title {
     color: rgba(255, 255, 255, 0.7); }
   .widget-lit-cal .ribbon {
@@ -71,8 +71,6 @@
   .widget-lit-cal .updated-at {
     color: rgba(255, 255, 255, 0.7); }
 
-.purple {
-  background-color: #b91be0; }
 
 .widget.widget-lit-cal {
   vertical-align: top; }
