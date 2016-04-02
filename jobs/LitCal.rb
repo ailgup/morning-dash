@@ -5,12 +5,12 @@ require 'rufus-scheduler'
 require 'time'
 
 SCHEDULER.every '60s', :first_in => 0 do |job|
-	today = Date.today.strftime("%Y/%m/%d")
 	page = HTTParty.get('http://calapi.inadiutorium.cz/api/v0/en/calendars/default/'+Date.today.strftime("%Y/%m/%d"))
 	page2 = HTTParty.get('http://www.catholic.org/saints/sofd.php')
-	link3 = Nokogiri::HTML(page2).xpath('//div[@id="saintsSofd"]/h3/a/@href')
-	page3 = HTTParty.get(link3)
-	saint_image = Nokogiri::HTML(page3).xpath('//div[@id="saintImage"]/img/@src')
+	link3 = Nokogiri::HTML(page2).xpath('//div[@id="saintsSofd"]/h3/a/@href')[0]
+	saint_name =  Nokogiri::HTML(page2).css("#saintsSofd").css("h3").css("a").first.text
+	page3 = HTTParty.get('http://catholic.org'+link3)
+	saint_image = 'http://catholic.org' + (Nokogiri::HTML(page3).xpath('//div[@id="saintImage"]/img/@src')).to_s
 
 
 	saint_name =  Nokogiri::HTML(page2).css("#saintsSofd").css("h3").css("a").first.text
@@ -18,7 +18,7 @@ SCHEDULER.every '60s', :first_in => 0 do |job|
 	season = page['season'].to_s.capitalize
 	rank = page['rank'].to_s.capitalize
 	if rank==""
-	rank="Octave of Easter"
+		rank="Octave of Easter"
 	end
 	color = page['celebrations'][0]['colour']
 
@@ -31,9 +31,8 @@ SCHEDULER.every '60s', :first_in => 0 do |job|
 	elsif page['season_week']==3
 		title="rd"
 	end
-	saint_name =  Nokogiri::HTML(page2).css("#saintsSofd").css("h3").css("a").first.text
+
 	saint_title= ""
-	saint_image= (page3.split("src=\"")[1]).split("\"")[0]
 	#optional memorials
 	if page['celebrations'].length>1 && page['celebrations'][0].title==""
 		saint_name = page['celebrations'][1]['title'].split(",")[0]
