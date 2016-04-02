@@ -5,11 +5,12 @@ require 'rufus-scheduler'
 require 'time'
 
 SCHEDULER.every '60s', :first_in => 0 do |job|
-
-	page = HTTParty.get('http://calapi.inadiutorium.cz/api/v0/en/calendars/general-la/today')
+today = Date.today.strftime("%Y/%m/%d")
+	page = HTTParty.get('http://calapi.inadiutorium.cz/api/v0/en/calendars/default/'+Date.today.strftime("%Y/%m/%d"))
 	page2 = HTTParty.get('http://www.catholic.org/saints/sofd.php')
-	page3 = HTTParty.get('http://www.santiebeati.it/ilsantodelgiorno.txt')
-
+	link3 = Nokogiri::HTML(page2).xpath('//div[@id="saintsSofd"]/h3/a/@href')
+	page3 = HTTParty.get(link3)
+	saint_image = Nokogiri::HTML(page3).xpath('//div[@id="saintImage"]/img/@src')
 
 
 	saint_name =  Nokogiri::HTML(page2).css("#saintsSofd").css("h3").css("a").first.text
