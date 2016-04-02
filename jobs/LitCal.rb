@@ -5,7 +5,7 @@ require 'rufus-scheduler'
 require 'time'
 
 SCHEDULER.every '60s', :first_in => 0 do |job|
-today = Date.today.strftime("%Y/%m/%d")
+	today = Date.today.strftime("%Y/%m/%d")
 	page = HTTParty.get('http://calapi.inadiutorium.cz/api/v0/en/calendars/default/'+Date.today.strftime("%Y/%m/%d"))
 	page2 = HTTParty.get('http://www.catholic.org/saints/sofd.php')
 	link3 = Nokogiri::HTML(page2).xpath('//div[@id="saintsSofd"]/h3/a/@href')
