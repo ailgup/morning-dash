@@ -150,7 +150,18 @@ h3 {
   display: table-cell;
   vertical-align: middle;
 }
-
+.widget.status-red {
+  background-color: #f33;
+  }
+.widget.status-white {
+  background-color: #000000;
+  }
+.widget.status-purple {
+  background-color: #9932CC;
+  }
+.widget.status-green {
+  background-color: #3D8B37;
+  }
 .widget.status-warning {
   background-color: $background-warning-color-1;
   @include animation(status-warning-background, 2s, ease, infinite);
