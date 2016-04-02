@@ -1,6 +1,10 @@
 class Dashing.litcal extends Dashing.Widget
 
 	ready: ->
+		@photoElem = $(@node).find('.photo-box')
+		photo = @get('saint_image')
+		if photo
+			@set 'current_photo', photo
 		# This is fired when the widget is done being rendered
 	onData: (data) ->
 		if data.color

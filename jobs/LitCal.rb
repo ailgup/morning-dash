@@ -9,7 +9,7 @@ SCHEDULER.every '60s', :first_in => 0 do |job|
 	page = HTTParty.get('http://calapi.inadiutorium.cz/api/v0/en/calendars/general-la/today')
 	page2 = HTTParty.get('http://www.catholic.org/saints/sofd.php')
 	page3 = HTTParty.get('http://www.santiebeati.it/ilsantodelgiorno.txt')
-	page3=(page3.split("src=\"")[1]).split("\"")[0]
+
 
 
 	saint_name =  Nokogiri::HTML(page2).css("#saintsSofd").css("h3").css("a").first.text
@@ -32,7 +32,7 @@ SCHEDULER.every '60s', :first_in => 0 do |job|
 	end
 	saint_name =  Nokogiri::HTML(page2).css("#saintsSofd").css("h3").css("a").first.text
 	saint_title= ""
-	saint_image= ""
+	saint_image= (page3.split("src=\"")[1]).split("\"")[0]
 	#optional memorials
 	if page['celebrations'].length>1 && page['celebrations'][0].title==""
 		saint_name = page['celebrations'][1]['title'].split(",")[0]
@@ -44,5 +44,5 @@ SCHEDULER.every '60s', :first_in => 0 do |job|
 
 	color=color
 	week = page['season_week'].to_s+title+" week of "+season
-	send_event('litcal', { color: 'white', weekday:weekday, week:week, rank:rank, saint:saint_name } )
+	send_event('litcal', { color: color, weekday:weekday, week:week, rank:rank, saint:saint_name, saint_image:saint_image } )
 end
