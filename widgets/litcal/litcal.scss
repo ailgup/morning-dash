@@ -1,73 +1,24 @@
-.widget-litcal h1{
-  font-size: 24px;}
-
-  .widget-litcal .title {
-    color: rgba(255, 255, 255, 0.7); }
-  .widget-litcal .ribbon {
-    font-size: 16px !important;
-    /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-    width: 65%;
-    position: relative;
-    background: #ba89b6;
-    color: #fff;
-    text-align: center;
-    padding: 0.5em 0.6em 0.1em 0.6em;
-    /* Adjust to suit */
-    margin: 2em auto 3em;
-    /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
-    margin-top: 0px;
-    margin-bottom: 25px; }
-  .widget-litcal .ribbon:before, .widget-litcal .ribbon:after {
-    content: "";
-    position: absolute;
-    display: block;
-    bottom: -1em;
-    border: 1.5em solid #986794;
-    z-index: -1; }
-  .widget-litcal .ribbon:before {
-    left: -2em;
-    border-right-width: 1.5em;
-    border-left-color: transparent; }
-  .widget-litcal .ribbon:after {
-    right: -2em;
-    border-left-width: 1.5em;
-    border-right-color: transparent; }
-  .widget-litcal .ribbon .ribbon-content:before, .widget-litcal .ribbon .ribbon-content:after {
-    content: "";
-    position: absolute;
-    display: block;
-    border-style: solid;
-    border-color: #804f7c transparent transparent transparent;
-    bottom: -1em; }
-  .widget-litcal .ribbon .ribbon-content:before {
-    left: 0;
-    border-width: 1em 0 0 1em; }
-  .widget-litcal .ribbon .ribbon-content:after {
-    right: 0;
-    border-width: 1em 1em 0 0; }
-  .widget-litcal .non-semantic-protector {
-    position: relative;
-    z-index: 1; }
-  .widget-litcal ol, .widget-litcal ul {
-    margin: 0 15px;
-    text-align: left; }
-  .widget-litcal ol {
-    list-style-position: inside; }
-  .widget-litcal li {
-    margin-bottom: 12px;
-    font-size: 18px; }
-  .widget-litcal .drive-time {
-    color: rgba(255, 255, 255, 0.7); }
-  .widget-litcal .drive-road {
-    position: relative;
-    left: 35px;
-    font-size: 10px;
-    display: block; }
-  .widget-litcal .more-info {
-    color: rgba(255, 255, 255, 0.7); }
-  .widget-litcal .updated-at {
-    color: rgba(255, 255, 255, 0.7); }
-
-
+.widget-litcal .weekday {
+	font-size: 25px; 
+}
+.widget-litcal .week {
+	font-size: 25px;  
+}
+.widget-litcal .rank {
+	font-size: 25px;  
+}
 .widget.widget-litcal {
-  vertical-align: top; }
+  vertical-align: top; 
+}
+.widget-litcal .photo-box{
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.widget-litcal .saint {
+	font-size: 12px;  
+}
+.widget-litcal .saint_title {
+	font-size: 10px;  
+}
