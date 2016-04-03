@@ -1,4 +1,4 @@
-$saint-image: url('http://blogs.ancientfaith.com/orthodoxbridge/wp-content/uploads/sites/27/2011/07/jesus-christ-icon.jpg');
+$background-image: url('http://blogs.ancientfaith.com/orthodoxbridge/wp-content/uploads/sites/27/2011/07/jesus-christ-icon.jpg');
 
 .widget-litcal .weekday {
 	font-size: 25px; 
@@ -13,14 +13,13 @@ $saint-image: url('http://blogs.ancientfaith.com/orthodoxbridge/wp-content/uploa
   vertical-align: top; 
 }
 .widget-litcal .photo-box{
-	background-image: $saint-image;
+	background-image: $background-image;
 	background-repeat: no-repeat;
     background-position: center;
 	margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 10px;
-	max-height: 100px;
 	
     height: 175px;
 	width: auto;
