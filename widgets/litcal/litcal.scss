@@ -1,3 +1,5 @@
+$saint-image: url('http://blogs.ancientfaith.com/orthodoxbridge/wp-content/uploads/sites/27/2011/07/jesus-christ-icon.jpg');
+
 .widget-litcal .weekday {
 	font-size: 25px; 
 }
@@ -11,10 +13,13 @@
   vertical-align: top; 
 }
 .widget-litcal .photo-box{
+	background-image: $saint-image;
 	margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 10px;
+	max-height: 100px;
+	box-shadow: 0 0 8px 8px white inset;
 }
 .widget-litcal .saint {
 	font-size: 12px;  

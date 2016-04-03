@@ -1,10 +1,10 @@
 class Dashing.litcal extends Dashing.Widget
 
 	ready: ->
-		@photoElem = $(@node).find('.photo-box')
+		#@photoElem = $(@node).find('.photo-box')
 		photo = @get('saint_image')
-		if photo
-			@set 'current_photo', photo
+		#if photo
+		#	@set 'current_photo', photo
 		# This is fired when the widget is done being rendered
 	onData: (data) ->
 		if data.color
@@ -13,4 +13,7 @@ class Dashing.litcal extends Dashing.Widget
 			  c.replace /\bstatus-\S+/g, ''
 			# add new class
 			$(@get('node')).addClass "status-#{data.color}"
-  
+		if data.saint_image
+			image_str="url('"+@get('saint_image')+"')"
+			$(@node).css( "saint-image", image_str);
+			puts image_str
