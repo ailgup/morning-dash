@@ -14,6 +14,6 @@ class Dashing.litcal extends Dashing.Widget
 			# add new class
 			$(@get('node')).addClass "status-#{data.color}"
 		if data.saint_image
-			image_str="url('"+@get('saint_image')+"')"
+			image_str="url(\'"+@get('saint_image')+"\')"
 			$(@node).css( "saint-image", image_str);
-			puts image_str
+			
