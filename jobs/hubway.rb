@@ -31,7 +31,7 @@ def stringAvail(doc,nameCheck)
 	for x in 0..1  #Will try again if fails
 		for counter in 0..max
 			if doc.xpath("string(//station[#{counter}]/name)").include? nameCheck 
-				if doc.xpath("string(//station[#{counter}]/instaalled)")=="false"
+				if doc.xpath("string(//station[#{counter}]/installed)")=="false"
 					return "Closed"
 				end
 				numBikes = doc.xpath("number(//station[#{counter}]/nbbikes)").to_i
