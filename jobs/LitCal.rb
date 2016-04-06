@@ -16,7 +16,7 @@ SCHEDULER.every '60s', :first_in => 0 do |job|
 	saint_name =  Nokogiri::HTML(page2).css("#saintsSofd").css("h3").css("a").first.text
 	weekday = page['weekday'].to_s.capitalize
 	season = page['season'].to_s.capitalize
-	rank = page['rank'].to_s.capitalize
+	rank = page['celebrations'][0]['rank'].to_s.capitalize
 	if rank==""
 		rank="Octave of Easter"
 	end
