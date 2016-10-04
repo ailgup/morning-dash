@@ -1,7 +1,6 @@
 class Dashing.litcal extends Dashing.Widget
 
 	ready: ->
-		Dashing.debugMode = true
 		#@photoElem = $(@node).find('.photo-box')
 		#photo = @get('saint_image')
 		#if photo

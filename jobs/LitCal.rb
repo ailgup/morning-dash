@@ -28,7 +28,6 @@ SCHEDULER.every '60s', :first_in => 0 do |job|
 	season = page['season'].to_s.capitalize
 
 	color = day_string.split(":")[1].downcase.strip
-	color="green"
 	suffix = "th"
 	if page['season_week']==1
 		suffix="st"
