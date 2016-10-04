@@ -152,6 +152,7 @@ h3 {
 }
 .widget.status-red {
   background-color: #f33;
+  color: #fff;
   }
 .widget.status-white {
   background-color: #fff;
@@ -159,9 +160,15 @@ h3 {
   }
 .widget.status-purple {
   background-color: #9932CC;
+  color: #fff;
   }
 .widget.status-green {
   background-color: #3D8B37;
+  color: #fff;
+  }
+ .widget.status-rose {
+  background-color: #d600ad;
+  color: #fff;
   }
 .widget.status-warning {
   background-color: $background-warning-color-1;
