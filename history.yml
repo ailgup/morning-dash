@@ -1,0 +1,3 @@
+---
+progress_bars: |+
+  data: {"title":"Hubway","progress_items":[{"name":"Ruggles","progress":86.66666666666667,"value":"13/15"},{"name":"North Lot","progress":71.42857142857143,"value":"10/14"},{"name":"Tremont St.","progress":50.0,"value":"5/10"},{"name":"Sleeper St.","progress":50.0,"value":"6/12"},{"name":"South Station","progress":68.18181818181817,"value":"30/44"}],"id":"progress_bars","updatedAt":1459625827}
